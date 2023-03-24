@@ -68,5 +68,51 @@
             }
         }
     ?>
+    <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
+        <h4>Zaawansowany</h4>
+        <label>
+            <input name="liczba1" value="<?php echo $_POST['liczba1']?>">
+            <select name='operacja2' required>
+                <option value="cos">cos</option>
+                <option value="sin">sin</option>
+                <option value="tan">tan</option>
+                <option value="binToDec">Binarne na dziesiętne</option>
+                <option value="decToBin">Dziesiętne na binarne</option>
+                <option value="decToHex">Dziesiętne na szesnastkowe</option>
+                <option value="hexToDec">Szesnastkowe na dziesiętne</option>
+                <option value="angleToRad">Stopnie na radiany</option>
+                <option value="radToAngle">Radiany na stopnie</option>
+            </select>
+        </label><br>
+        <input type="submit" value="Oblicz">
+    </form>
+
+    <?php
+    if($_SERVER["REQUEST_METHOD"]=="POST"){
+        $liczba1 = $_POST['liczba1'];
+        $operacja2 = $_POST['operacja2'];
+
+        if ($operacja2 == 'cos') {
+            echo cos($liczba1);
+        } elseif ($operacja2 == 'sin') {
+            echo sin($liczba1);
+        } elseif ($operacja2 == "tan") {
+            echo tan($liczba1);
+        } elseif ($operacja2 == "binToDec") {
+            echo bindec($liczba1);
+        } elseif ($operacja2 == "decToBin") {
+            echo decbin($liczba1);
+        } elseif ($operacja2 == "decToHex") {
+            echo dechex($liczba1);
+        } elseif ($operacja2 == "hexToDec") {
+            echo hexdec($liczba1);
+        } elseif ($operacja2 == "angleToRad") {
+            echo deg2rad($liczba1);
+        } elseif ($operacja2 == "radToAngle") {
+            echo rad2deg($liczba1);
+        }
+    }
+    ?>
+
 </body>
 </html>
