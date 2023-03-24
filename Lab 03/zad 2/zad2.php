@@ -71,7 +71,7 @@
     <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
         <h4>Zaawansowany</h4>
         <label>
-            <input name="liczba1" value="<?php echo $_POST['liczba1']?>">
+            <input name="liczba1" >
             <select name='operacja2' required>
                 <option value="cos">cos</option>
                 <option value="sin">sin</option>
