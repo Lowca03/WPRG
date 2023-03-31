@@ -5,7 +5,6 @@
     <title>Formularz kontaktowy</title>
 </head>
 <body>
-<h3>Podaj datę swojego urodzenia</h3>
 <form action="<?php echo $_SERVER['PHP_SELF']?>" method="GET">
     <label>
         Path<input type="text" name="path"><br>
