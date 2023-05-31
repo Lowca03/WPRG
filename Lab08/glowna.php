@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Zadanie z bazami</title>
+    <title>Strona główna</title>
 </head>
 <body>
 <table>
