@@ -1,0 +1,5 @@
+https://www.google.com/;Google
+https://www.facebook.com/;Facebook
+https://www.youtube.com/;YouTube
+https://www.wikipedia.org/;Wikipedia
+https://www.amazon.com/;Amazon
